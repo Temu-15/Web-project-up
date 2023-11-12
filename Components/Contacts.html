@@ -64,28 +64,30 @@
           </li>
         </ul>
       </div>
-      <form action="http://127.0.0.1:5500/Components/Contacts.html" class="contact-form" method="post" id="form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" method="post" id="form">
+        <input type="hidden" name="access_key" value="8a1d9975-0916-413b-b0ef-8473f1d7e06d">
         <div class="row-container">
           <div class="name-con">
-            <input type="text" class="input-field" placeholder="Your full name" required>
+            <input type="text" name="name" class="input-field" placeholder="Your full name" required>
           </div>
           <div class="name-con">
-            <input type="email" class="input-field" placeholder="Your Email Address" required>
+            <input type="email" name="email" class="input-field" placeholder="Your Email Address" required>
           </div>
         </div>
         <div class="row-container">
           <div class="name-con">
-            <input type="number" class="input-field" placeholder="Phone-Number">
+            <input type="text" name="phone" class="input-field" placeholder="Phone-Number">
           </div>
           <div class="name-con">
-            <input type="text" class="input-field" placeholder="Subject">
+            <input type="text" name="subject" class="input-field" placeholder="Subject">
           </div>
         </div>
         <div>
-          <textarea draggable="false" id="" cols="51" rows="5" placeholder="your Message ..." class="input-field" textarea></textarea>
+          <textarea  name="message" draggable="false" id="" cols="51" rows="5" placeholder="your Message ..." class="input-field" textarea></textarea>
         </div>
-
+      
         <button type="submit" class="btn-contacts">Submit</button>
+        
       </form>
     </section>
     <footer>
