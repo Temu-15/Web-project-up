@@ -477,6 +477,40 @@ textarea {
   margin-bottom: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .career {
+    display: none;
+  }
+
+  .home {
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 7rem;
+    gap: 3rem;
+  }
+  .home-heading1 {
+    font-size: 6rem;
+  }
+
+  .home-decription {
+    width: fit-content;
+  }
+  .home-image {
+    width: 80%;
+    height: 50vh;
+  }
+  .link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    max-height: 90px;
+    font-size: 1.8rem;
+  }
+}
 @media screen and (max-width: 576px) {
   body {
     padding: 4% 5%;
@@ -698,40 +732,5 @@ textarea {
   }
   .card:hover {
     animation: changescale 0.4s ease-in-out;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .career {
-    display: none;
-  }
-
-  .home {
-    width: 80vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem auto 7rem;
-    gap: 3rem;
-  }
-  .home-heading1 {
-    font-size: 6rem;
-  }
-
-  .home-decription {
-    width: fit-content;
-  }
-  .home-image {
-    width: 80%;
-    height: 50vh;
-  }
-  .link-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 110px;
-    max-height: 90px;
-    font-size: 1.8rem;
   }
 }
