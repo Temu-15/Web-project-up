@@ -270,6 +270,10 @@ hr {
   justify-self: start;
 }
 .timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
   font-size: 1.8rem;
   max-width: 10ch;
 }
@@ -364,7 +368,7 @@ hr {
 }
 
 .input-field:hover {
-  box-shadow: 1px 1px 4px 2px #0ce;
+  background-color: #dad7cd;
 }
 
 textarea {
@@ -406,11 +410,14 @@ textarea {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 7%;
   column-gap: 3%;
+  margin: 0 auto;
 }
 
 .card {
   width: 100%;
+  max-width: 400px;
   height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -691,5 +698,43 @@ textarea {
   }
   .card:hover {
     animation: changescale 0.4s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .career {
+    display: none;
+  }
+  .nav-link {
+    margin: 0 1.3vw;
+  }
+
+  .home {
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 7rem;
+    gap: 3rem;
+  }
+  .home-heading1 {
+    font-size: 6rem;
+  }
+
+  .home-decription {
+    width: fit-content;
+  }
+  .home-image {
+    width: 80%;
+    height: 50vh;
+  }
+  .link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    max-height: 90px;
+    font-size: 1.8rem;
   }
 }
